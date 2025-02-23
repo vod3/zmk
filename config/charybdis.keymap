@@ -93,6 +93,7 @@
             key-positions = <15 16>;
             layers = <0>;
             timeout-ms = <50>;
+            
         };
     };
 

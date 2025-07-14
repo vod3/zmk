@@ -103,9 +103,9 @@
         default_layer {
             label = "DEFAULT";
             bindings = <
-            &lt 2 TAB     &kp V  &kp DOT     &kp O         &kp U      &kp Ä              &kp Q          &kp G      &kp L      &kp H      &kp F     &kp J
-            &kp CAPSLOCK  &kp C  &kp A       &kp E         &kp I      &kp Y              &kp B          &kp T      &kp R      &kp N      &kp S     &kp ß
-            &kp LSHFT     &kp Z  &kp X       &kp COMMA     &kp Ü      &kp Ö              &kp P          &kp D      &kp W      &kp M      &kp K
+            &lt 2 TAB     &kp V  &kp DOT     &kp O         &kp U      &kp A              &kp Q          &kp G      &kp L      &kp H      &kp F     &kp J
+            &kp CAPSLOCK  &kp C  &kp A       &kp E         &kp I      &kp Y              &kp B          &kp T      &kp R      &kp N      &kp S     &kp S
+            &kp LSHFT     &kp Z  &kp X       &kp COMMA     &kp U      &kp O              &kp P          &kp D      &kp W      &kp M      &kp K
                                          &mkp RCLK  &mt LCTRL SPACE  &mo 1              &kp BACKSPACE  &kp RETURN  &mkp LCLK
                     
             >;

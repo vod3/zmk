@@ -13,6 +13,17 @@
 
 / {
 
+    behaviors {
+        u_mt: u_mt {
+            compatible = "zmk,behavior-hold-tap";
+            label = "u_mt";
+            #binding-cells = <2>;
+            tapping_term_ms = <U_TAPPING_TERM>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+        };
+    };
+
     combos {
         compatible = "zmk,combos";
     };
@@ -23,10 +34,10 @@
         default_layer {
             label = "DEFAULT";
             bindings = <
-            &lt 2 TAB     &kp V  &kp DOT     &kp O         &kp U       &kp A              &kp Q          &kp G      &kp L      &kp H      &kp F     &kp J
-            &kp CAPSLOCK  &kp C  &kp A       &kp E         &kp I       &kp Y              &kp B          &kp T      &kp R      &kp N      &kp S     &kp S
-            &kp LSHFT     &kp Z  &kp X       &kp COMMA     &kp U       &kp O              &kp P          &kp D      &kp W      &kp M      &kp K     &none
-                                             &kp TAB       &lt 2 SPACE &lt 3 LGUI         &kp BACKSPACE  &lt 1 RETURN
+            &lt 2 TAB     &kp V         &kp DOT        &kp O            &kp U          &kp A              &kp Q          &kp G          &kp L          &kp H         &kp F         &kp J
+            &kp ESC       &u_mt LGUI C  &u_mt LALT A   &u_mt LSHFT E    &u_mt LCTRL I  &kp Y              &kp B          &u_mt LCTRL T  &u_mt LSHFT R  &u_mt LALT N  &u_mt LGUI S  &kp S
+            &kp LSHFT     &kp Z         &kp X          &kp COMMA        &kp U          &kp O              &kp P          &kp D          &kp W          &kp M         &kp K         &none
+                                                       &kp TAB          &lt 2 SPACE    &lt 3 LGUI         &kp BACKSPACE  &lt 1 RETURN
                     
             >;
         };

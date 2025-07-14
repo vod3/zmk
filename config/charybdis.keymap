@@ -106,7 +106,7 @@
             &lt 2 TAB     &kp V  &kp DOT     &kp O         &kp U       &kp A              &kp Q          &kp G      &kp L      &kp H      &kp F     &kp J
             &kp CAPSLOCK  &kp C  &kp A       &kp E         &kp I       &kp Y              &kp B          &kp T      &kp R      &kp N      &kp S     &kp S
             &kp LSHFT     &kp Z  &kp X       &kp COMMA     &kp U       &kp O              &kp P          &kp D      &kp W      &kp M      &kp K     &none
-                                             &kb TAB       &lt 2 SPACE &lt 3 SPACE        &kp BACKSPACE  &lt 1 RETURN
+                                             &kp TAB       &lt 2 SPACE &lt 3 SPACE        &kp BACKSPACE  &lt 1 RETURN
                     
             >;
         };

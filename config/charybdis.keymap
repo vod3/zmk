@@ -12,89 +12,21 @@
 
 
 / {
-    
+
+    behaviors {
+        hold_layer_meta: hold_layer_meta {
+        compatible = "zmk,behavior-hold-tap";
+        #binding-cells = <0>;
+        label = "Hold Layer and Meta";
+        bindings = <&layer_momentary 3>, <&kp META>;
+        flavor = "hold-preferred";
+        tapping-term-ms = <200>;
+        };
+      };
+    };
 
     combos {
         compatible = "zmk,combos";
-
-
-
-        combo_lbrc {
-            timeout-ms = <50>;
-            key-positions = <4 5>; // KP: VB
-            bindings = <&mt RBRC LBRC>; 
-            layers = <0 1 2 3 4 5>;
-        };
-
-        combo_rbrc {
-            timeout-ms = <50>;
-            key-positions = <6 7>; // KP: NM
-            bindings = <&kp RBRC>; 
-            layers = <0 1 2 3 4 5>;
-        }; 
-
-        combo_lpar {
-            timeout-ms = <50>;
-            key-positions = <16 17>; // KP: FG
-            bindings = <&mt RPAR LPAR>; 
-            layers = <0 1 2 3 4 5>;
-        };
-
-        combo_rpar {
-            timeout-ms = <50>;
-            key-positions = <18 19>; 
-            bindings = <&kp RPAR>; 
-            layers = <0 1 2 3 4 5>;
-        };
-
-        combo_lbkt {
-            timeout-ms = <50>;
-            key-positions = <28 29>; // KP: RT
-            bindings = <&mt RBKT LBKT>;  // 可以用CMD+这个单手返回到代码上一个编辑的地方 或者网页返回
-            layers = <0 1 2 3 4 5>;
-        };
-        combo_rbkt {
-            timeout-ms = <50>;
-            key-positions = <30 31>; // KP: YU
-            bindings = <&kp RBKT>; 
-            layers = <0 1 2 3 4 5>;
-        };
-
-        esc {
-            timeout-ms = <50>;
-            key-positions = <0 1>;
-            bindings = <&kp ESC>; // ESC
-            layers = <0>;
-        };
-
-        up {
-            bindings = <&kp UP>;
-            key-positions = <3 4>;
-            layers = <0>;
-            timeout-ms = <50>;
-        };
-
-        down {
-            bindings = <&kp DOWN>;
-            key-positions = <27 28>;
-            timeout-ms = <50>;
-            layers = <0>;
-        };
-
-        left {
-            bindings = <&kp LEFT>;
-            key-positions = <14 15>;
-            layers = <0>;
-            timeout-ms = <50>;
-        };
-
-        right {
-            bindings = <&kp RIGHT>;
-            key-positions = <15 16>;
-            layers = <0>;
-            timeout-ms = <50>;
-            
-        };
     };
 
     keymap {
@@ -106,7 +38,7 @@
             &lt 2 TAB     &kp V  &kp DOT     &kp O         &kp U       &kp A              &kp Q          &kp G      &kp L      &kp H      &kp F     &kp J
             &kp CAPSLOCK  &kp C  &kp A       &kp E         &kp I       &kp Y              &kp B          &kp T      &kp R      &kp N      &kp S     &kp S
             &kp LSHFT     &kp Z  &kp X       &kp COMMA     &kp U       &kp O              &kp P          &kp D      &kp W      &kp M      &kp K     &none
-                                             &kp TAB       &lt 2 SPACE &lt 3 LGUI         &kp BACKSPACE  &lt 1 RETURN
+                                             &kp TAB       &lt 2 SPACE &hold_layer_meta   &kp BACKSPACE  &lt 1 RETURN
                     
             >;
         };

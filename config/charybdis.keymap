@@ -112,7 +112,7 @@
         };
         
         symbol_layer {
-            label = "SYMBOL";
+            label = "SYMBOLS";
                                                                            
             bindings = <
             &none   &kp AT     &kp PRCNT   &kp LBRC   &kp RBRC   &kp CARET          &kp EXCL   &kp LT     &kp GT     &kp EQUAL   &kp AMPS   &kp F11

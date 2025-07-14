@@ -67,7 +67,7 @@
             bindings = <
             &lt 2 TAB     &kp V         &kp DOT        &kp O            &kp U          &kp A              &kp Q          &kp G          &kp L          &kp H         &kp F         &kp J
             &kp ESC       &u_mt LGUI C  &u_mt LALT A   &u_mt LSHFT E    &u_mt LCTRL I  &kp Y              &kp B          &u_mt LCTRL T  &u_mt LSHFT R  &u_mt LALT N  &u_mt LGUI S  &kp S
-            &kp LSHFT     &kp Z         &kp X          &kp COMMA        &kp U          &kp O              &kp P          &kp D          &kp W          &kp M         &kp K         &tl QWERTY
+            &kp LSHFT     &kp Z         &kp X          &kp COMMA        &kp U          &kp O              &kp P          &kp D          &kp W          &kp M         &kp K         &tog QWERTY
                                                        &kp TAB          &lt 2 SPACE    &lm 3 LGUI         &kp BACKSPACE  &lt 1 RETURN
             >;
         };

@@ -9,6 +9,7 @@
 #define NUMARROW 2
 #define WM       3
 
+#define U_TAPPING_TERM 200
 
 
 / {

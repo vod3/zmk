@@ -8,6 +8,7 @@
 #define SYMBOLS  1
 #define NUMARROW 2
 #define WM       3
+#define QWERTY   4
 
 #define U_TAPPING_TERM 200
 
@@ -66,21 +67,17 @@
             bindings = <
             &lt 2 TAB     &kp V         &kp DOT        &kp O            &kp U          &kp A              &kp Q          &kp G          &kp L          &kp H         &kp F         &kp J
             &kp ESC       &u_mt LGUI C  &u_mt LALT A   &u_mt LSHFT E    &u_mt LCTRL I  &kp Y              &kp B          &u_mt LCTRL T  &u_mt LSHFT R  &u_mt LALT N  &u_mt LGUI S  &kp S
-            &kp LSHFT     &kp Z         &kp X          &kp COMMA        &kp U          &kp O              &kp P          &kp D          &kp W          &kp M         &kp K         &none
+            &kp LSHFT     &kp Z         &kp X          &kp COMMA        &kp U          &kp O              &kp P          &kp D          &kp W          &kp M         &kp K         &tl QWERTY
                                                        &kp TAB          &lt 2 SPACE    &lm 3 LGUI         &kp BACKSPACE  &lt 1 RETURN
-                    
             >;
         };
-        
         symbol_layer {
             label = "SYMBOLS";
-                                                                           
             bindings = <
             &none   &kp AT     &kp PRCNT   &kp LBRC   &kp RBRC   &kp CARET          &kp EXCL   &kp LT     &kp GT     &kp EQUAL   &kp AMPS   &kp F11
             &none   &kp PIPE2  &kp GRAVE   &kp LPAR   &kp RPAR   &kp STAR           &kp QMARK  &kp SLASH  &kp COLON  &kp MINUS   &kp UNDER  &none
             &none   &none      &kp HASH    &kp LBKT   &kp RBKT   &kp TILDE          &kp PLUS   &kp DQT    &kp SQT    &kp NUBS    &kp SEMI   &kp KP_DOT
-                                           &trans     &trans     &trans             &none      &none   
-                             
+                                           &trans     &trans     &trans             &none      &none
             >;
         };
 
@@ -90,8 +87,7 @@
             &none  &none  &kp N1   &kp N2   &kp N3   &none             &none  &none     &none     &none   &none      &none
             &none  &none  &kp N4   &kp N5   &kp N6   &none             &none  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &none
             &none  &none  &kp N7   &kp N8   &kp N9   &kp N0            &none  &none     &none     &none   &none      &none
-                                    &none   &none    &none             &none            &none         
-                           
+                                    &none   &none    &none             &none            &none
             >;
         };
 
@@ -101,10 +97,19 @@
             &trans   &trans   &trans    &kp UP    &trans       &trans        &trans  &trans     &trans     &trans   &trans      &trans
             &trans   &trans   &kp LEFT  &kp DOWN  &kp RIGHT    &trans        &trans  &kp LEFT   &kp DOWN   &kp UP   &kp RIGHT   &trans
             &trans   &trans   &trans    &trans    &trans       &trans        &trans  &trans     &trans     &trans   &trans      &trans
-                                        &trans    &trans       &none         &trans  &trans         
-                       
+                                        &trans    &trans       &none         &trans  &trans
             >;
         };
+
+		qwerty_layer {
+			label = "QWERTY"
+			bindings = <
+            &none   &none     &none    &kp W    &none      &none       &none         &none     &none     &none   &none      &none
+            &none   &kp TAB   &kp A    &kp S    &kp D      &none       &none         &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &none
+            &none   &none     &none    &none    &none      &none       &none         &none     &none     &none   &none      &none
+                                       &none    &none      &none       &none         &none
+			>;
+		};
 
     };
 };

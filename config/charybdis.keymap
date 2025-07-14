@@ -15,14 +15,13 @@
 
     behaviors {
         hold_layer_meta: hold_layer_meta {
-        compatible = "zmk,behavior-hold-tap";
-        #binding-cells = <0>;
-        label = "Hold Layer and Meta";
-        bindings = <&layer_momentary 3>, <&kp META>;
-        flavor = "hold-preferred";
-        tapping-term-ms = <200>;
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <0>;
+            label = "Hold Layer and Meta";
+            bindings = <&layer_momentary 3>, <&kp META>;
+            flavor = "hold-preferred";
+            tapping-term-ms = <200>;
         };
-      };
     };
 
     combos {

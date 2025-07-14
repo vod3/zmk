@@ -4,10 +4,10 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 
-#define DEFAULT 0
-#define NUMBER  1
-#define FN  2
-#define HOTKEY  3
+#define DEFAULT  0
+#define SYMBOLS  1
+#define NUMARROW 2
+#define WM       3
 
 
 
@@ -103,28 +103,28 @@
         default_layer {
             label = "DEFAULT";
             bindings = <
-            &lt 2 TAB     &kp V  &kp DOT     &kp O         &kp U      &kp A              &kp Q          &kp G      &kp L      &kp H      &kp F     &kp J
-            &kp CAPSLOCK  &kp C  &kp A       &kp E         &kp I      &kp Y              &kp B          &kp T      &kp R      &kp N      &kp S     &kp S
-            &kp LSHFT     &kp Z  &kp X       &kp COMMA     &kp U      &kp O              &kp P          &kp D      &kp W      &kp M      &kp K
-                                         &mkp RCLK  &mt LCTRL SPACE  &mo 1              &kp BACKSPACE  &kp RETURN  &mkp LCLK
+            &lt 2 TAB     &kp V  &kp DOT     &kp O         &kp U       &kp A              &kp Q          &kp G      &kp L      &kp H      &kp F     &kp J
+            &kp CAPSLOCK  &kp C  &kp A       &kp E         &kp I       &kp Y              &kp B          &kp T      &kp R      &kp N      &kp S     &kp S
+            &kp LSHFT     &kp Z  &kp X       &kp COMMA     &kp U       &kp O              &kp P          &kp D      &kp W      &kp M      &kp K
+                                             &TAB          &lt 2 SPACE &lt 3 SPACE        &BACKSPACE     &lt 1 RETURN
                     
             >;
         };
         
-        number_layer {
-            label = "NUMBER";
+        symbol_layer {
+            label = "SYMBOL";
                                                                            
             bindings = <
-            &kp F1        &kp F2         &kp F3        &kp F4         &kp F5      &kp F6      &kp F7  &kp F8   &kp F9   &kp F10   &kp F11   &kp F12
-            &none         &kp N1         &kp N2        &kp N3         &kp N4      &kp N5      &kp N6  &kp N7   &kp N8   &kp N9    &kp N0    &kp PLUS
-            &kp LSHFT     &mkp MCLK      &kp C_VOL_DN  &kp C_VOL_UP   &none       &none       &none   &none    &none    &none     &none     &kp KP_DOT
-                                         &none         &none          &none       &none       &none   &none   
+            &none   &kp AT     &kp PRCNT   &kp LBRC   &kp RBRC   &kp CARET          &kp EXCL   &kp LT     &kp GT     &kp EQUAL   &kp AMPS   &kp F11
+            &none   &kp PIPE2  &kp GRAVE   &kp LPAR   &kp RPAR   &kp STAR           &kp QMARK  &kp SLASH  &kp COLON  &kp MINUS   &kp UNDER  &none
+            &none   &none      &kp HASH    &kp LBKT   &kp RBKT   &kp TILDE          &kp PLUS   &kp DQT    & SQT      &kp NUBS    &kp SEMI   &kp KP_DOT
+                                           &none      &none      &none              &none      &none      &none   
                              
             >;
         };
 
-        fn_layer {
-            label = "FN";
+        numarrow_layer {
+            label = "NUMARROW";
             bindings = <
             &bt BT_SEL 0  &bt BT_SEL 1  &kp F10  &kp F11  &kp F12  &bt BT_CLR       &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR
             &sys_reset    &none         &kp F7   &kp F8   &kp F9   &out OUT_USB     &out OUT_USB  &none         &none         &none         &none         &sys_reset
@@ -134,8 +134,8 @@
             >;
         };
 
-        hotkey_layer {
-            label = "HOTKEY";
+        wm_layer {
+            label = "WM";
             bindings = <
             &none  &none    &none     &kp UP    &none        &none         &none  &none     &kp UP     &none      &none  &none
             &none  &none    &kp LEFT  &kp DOWN  &kp RIGHT    &none         &none  &kp LEFT  &kp DOWN   &kp RIGHT  &none  &none

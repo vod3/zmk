@@ -106,7 +106,7 @@
             &lt 2 TAB     &kp V  &kp DOT     &kp O         &kp U       &kp A              &kp Q          &kp G      &kp L      &kp H      &kp F     &kp J
             &kp CAPSLOCK  &kp C  &kp A       &kp E         &kp I       &kp Y              &kp B          &kp T      &kp R      &kp N      &kp S     &kp S
             &kp LSHFT     &kp Z  &kp X       &kp COMMA     &kp U       &kp O              &kp P          &kp D      &kp W      &kp M      &kp K     &none
-                                             &kp TAB       &lt 2 SPACE &lt 3 SPACE        &kp BACKSPACE  &lt 1 RETURN
+                                             &kp TAB       &lt 2 SPACE &lt 3 LGUI         &kp BACKSPACE  &lt 1 RETURN
                     
             >;
         };
@@ -126,10 +126,10 @@
         numarrow_layer {
             label = "NUMARROW";
             bindings = <
-            &bt BT_SEL 0  &bt BT_SEL 1  &kp F10  &kp F11  &kp F12  &bt BT_CLR       &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR
-            &sys_reset    &none         &kp F7   &kp F8   &kp F9   &out OUT_USB     &out OUT_USB  &none         &none         &none         &none         &sys_reset
-            &none         &none         &kp F4   &kp F5   &kp F6   &out OUT_BLE     &out OUT_BLE  &none         &none         &none         &none         &none
-                                                 &kp F1   &kp F2   &kp F3           &none         &none         
+            &none  &none  &kp N1   &kp N2   &kp N3   &none             &none  &none     &none     &none   &none      &none
+            &none  &none  &kp N4   &kp N5   &kp N6   &none             &none  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &none
+            &none  &none  &kp N7   &kp N8   &kp N9   &kp N0            &none  &none     &none     &none   &none      &none
+                                    &none   &none    &none             &none            &none         
                            
             >;
         };
@@ -137,9 +137,9 @@
         wm_layer {
             label = "WM";
             bindings = <
-            &none  &none    &none     &kp UP    &none        &none         &none  &none     &kp UP     &none      &none  &none
-            &none  &none    &kp LEFT  &kp DOWN  &kp RIGHT    &none         &none  &kp LEFT  &kp DOWN   &kp RIGHT  &none  &none
-            &none  &none    &none     &none     &none        &none         &none  &none     &none      &none      &none  &none
+            &none  &none    &none     &kp UP    &none        &none         &none  &none     &none     &none   &none      &none
+            &none  &none    &kp LEFT  &kp DOWN  &kp RIGHT    &none         &none  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &none
+            &none  &none    &none     &none     &none        &none         &none  &none     &none     &none   &none      &none
                                       &none     &none        &none         &none  &none         
                        
             >;

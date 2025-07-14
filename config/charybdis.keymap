@@ -106,7 +106,7 @@
 			bindings = <
             &none   &none     &none    &kp W    &none      &none       &none         &none     &none     &none   &none      &none
             &none   &kp TAB   &kp A    &kp S    &kp D      &none       &none         &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &none
-            &none   &none     &none    &none    &none      &none       &none         &none     &none     &none   &none      &none
+            &none   &none     &none    &none    &none      &none       &none         &none     &none     &none   &none      &trans
                                        &none    &none      &none       &none         &none
 			>;
 		};

@@ -94,10 +94,10 @@
         wm_layer {
             label = "WM";
             bindings = <
-            &trans   &trans   &trans    &kp UP    &trans       &trans        &trans  &trans     &trans     &trans   &trans      &trans
-            &trans   &trans   &kp LEFT  &kp DOWN  &kp RIGHT    &trans        &trans  &kp LEFT   &kp DOWN   &kp UP   &kp RIGHT   &trans
-            &trans   &trans   &trans    &trans    &trans       &trans        &trans  &trans     &trans     &trans   &trans      &trans
-                                        &trans    &trans       &none         &trans  &trans
+			&trans &trans &kp N1 &kp N2 &kp N3 &trans        &trans &trans    &trans    &trans   &trans     &trans 
+            &trans &trans &trans &trans &trans &trans        &trans &kp LEFT  &kp DOWN  &kp UP   &kp RIGHT  &trans
+			&trans &trans &trans &trans &trans &trans        &trans &trans    &trans    &trans   &trans     &trans 
+			&trans &trans &trans &trans &trans &trans        &trans &trans    &trans    &trans   &trans     &trans 
             >;
         };
 

@@ -9,7 +9,8 @@
 #define NUMARROW 2
 #define WM       3
 #define POINTER  4
-#define QWERTY   5
+#define SCROLL   5
+#define QWERTY   6
 
 #define U_TAPPING_TERM 200
 
@@ -102,8 +103,7 @@
 			&trans &trans &kp N1 &kp N2 &kp N3 &trans        &trans &trans    &trans    &trans   &trans     &trans 
             &trans &trans &trans &trans &trans &trans        &trans &kp LEFT  &kp DOWN  &kp UP   &kp RIGHT  &trans
 			&trans &trans &trans &trans &trans &trans        &trans &trans    &trans    &trans   &trans     &trans 
-			&trans &trans &trans &trans &trans &trans        &trans &trans    &trans    &trans   &trans     &trans 
-			&trackball_scroll_x &trackball_scroll_y
+                                 &none  &none  &none         &none  &none
 
             >;
         };
@@ -113,10 +113,21 @@
             bindings = <
               &trans       &trans       &trans        &trans        &trans      &trans             &trans        &trans        &trans       &trans
               &kp LGUI     &kp LALT     &kp LCTRL     &kp LSHFT     &trans      &trans             &kp RSHFT     &kp RCTRL     &kp RALT     &kp RGUI
-              &trans       &mo SCR      &mo SNI       &trans        &trans      &trans             &trans        &tog SNI      &tog SCR     &trans
+              &trans       &mo SCROLL   &trans        &trans        &trans      &trans             &trans        &trans        &trans       &trans
                                                       &mkp RCLK     &mkp LCLK   &mkp MCLK          &trans        &trans
             >;
         };
+
+		scroll_layer {
+            label = "SCROLL";
+            bindings = <
+              &trans       &trans       &trans        &trans        &trans      &trans             &trans        &trans        &trans       &trans
+              &trans       &trans       &trans        &trans        &trans      &trans             &trans        &trans        &trans       &trans
+              &trans       &trans       &trans        &trans        &trans      &trans             &trans        &trans        &trans       &trans
+                                                      &none  &none  &none         &none  &none
+            >;
+        };
+
 
 		qwerty_layer {
 			label = "QWERTY";

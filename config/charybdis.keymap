@@ -61,9 +61,21 @@
             ;
     };
 
-    combos {
-        compatible = "zmk,combos";
-    };
+	#define COMBO_TERM_FAST 14
+	#define COMBO_TERM_NORMAL 20
+	#define COMBO_TERM_SLOW 40
+
+	combos {
+		compatible = "zmk,combos";
+
+		COMBO(l_leftclick, &mkp LCLK, 11 12, BASE, COMBO_TERM_SLOW)
+		COMBO(l_rightclick, &mkp RCLK, 21 22, BASE, COMBO_TERM_SLOW)
+		COMBO(l_middleclick, &mkp MCLK, 22 23, BASE, COMBO_TERM_SLOW)
+
+		COMBO(r_leftclick, &mkp LCLK, 17 18, BASE, COMBO_TERM_SLOW)
+		COMBO(r_rightclick, &mkp RCLK, 27 28, BASE, COMBO_TERM_SLOW)
+		COMBO(r_middleclick, &mkp MCLK, 26 27, BASE, COMBO_TERM_SLOW)
+	}; 
 
     keymap {
         compatible = "zmk,keymap";
@@ -73,7 +85,7 @@
             bindings = <
             &lt 2 TAB     &kp V         &kp DOT        &kp O            &kp U             &kp RA(A)      &kp Q          &kp G          &kp L          &kp H         &kp F         &kp J
             &kp ESC       &u_mt LGUI C  &u_mt LALT A   &u_mt LSHFT E    &u_mt LCTRL I     &kp Y          &kp B          &u_mt LCTRL T  &u_mt LSHFT R  &u_mt LALT N  &u_mt LGUI S  &kp RA(S)
-            &lt POINTER   &kp Z         &kp X          &kp COMMA        &kp RA(U)         &kp RA(O)      &kp P          &kp D          &kp W          &kp M         &kp K         &tog QWERTY
+            &lt POINTER Z &kp Z         &kp X          &kp COMMA        &kp RA(U)         &kp RA(O)      &kp P          &kp D          &kp W          &kp M         &kp K         &tog QWERTY
                                                        &kp TAB          &lt 2 SPACE       &lm 3 LGUI     &kp BACKSPACE  &lt 1 RETURN
             >;
         };

@@ -24,6 +24,14 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
+		scroll_mode: scroll_mode {
+    		compatible = "zmk,behavior-hold-tap";
+			label = "Scroll Mode Layer Toggle";
+			#binding-cells = <0>;
+			tapping-term-ms = <200>;
+			flavor = "hold-preferred";
+			bindings = <&mo WM>;
+		};
     };
 
     /**
@@ -98,6 +106,8 @@
             &trans &trans &trans &trans &trans &trans        &trans &kp LEFT  &kp DOWN  &kp UP   &kp RIGHT  &trans
 			&trans &trans &trans &trans &trans &trans        &trans &trans    &trans    &trans   &trans     &trans 
 			&trans &trans &trans &trans &trans &trans        &trans &trans    &trans    &trans   &trans     &trans 
+			&trackball_scroll_x &trackball_scroll_y
+
             >;
         };
 

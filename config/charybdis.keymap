@@ -14,6 +14,15 @@
 
 
 / {
+	trackball_listener {
+        compatible = "zmk,input-listener";
+        device = <&trackball>;
+        input-processors = <&zip_xy_scaler 1 2>, <&zip_temp_layer 4 400>; // Switch to auto-mouse temp layer, decrease sensitivity
+        scroll {
+            layers = <5>; // SCROLL
+            input-processors = <&zip_xy_scaler 1 5>, <&zip_xy_to_scroll_mapper>, <&zip_scroll_transform (INPUT_TRANSFORM_Y_INVERT)>;
+        };
+    };
 
     behaviors {
         u_mt: u_mt {
@@ -108,6 +117,24 @@
 			&trans &trans &trans &trans &trans &trans        &trans &trans    &trans    &trans   &trans     &trans 
 			&trackball_scroll_x &trackball_scroll_y
 
+            >;
+        };
+
+		 AUTO-MOUSE {
+            bindings = <
+				&trans  &trans  &trans  &trans     &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
+				&trans  &trans  &trans  &trans     &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
+				&trans  &trans  &trans  &trans     &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
+                &mkp LCLK  &trans  &mkp RCLK    &trans  &trans
+            >;
+        };
+
+        SCROLL {
+            bindings = <
+				&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+				&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+				&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans    &trans  &trans
             >;
         };
 

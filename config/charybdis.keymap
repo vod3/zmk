@@ -108,7 +108,7 @@
             &none   &none     &kp Q    &kp W    &kp E      &none       &none         &none     &none     &none   &none      &none
             &kp TAB &kp LSHFT &kp A    &kp S    &kp D      &none       &none         &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &none
             &none   &kp LCTRL &none    &none    &none      &none       &none         &none     &none     &none   &none      &trans
-                                       &none    &kp SPACE  &kp LSHIFT  &none         &none
+                                       &none    &kp SPACE  &none       &trans        &trans
 			>;
 		};
 

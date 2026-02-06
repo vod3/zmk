@@ -68,7 +68,7 @@
             &lt 2 TAB     &kp V         &kp DOT        &kp O            &kp U             &kp RA(A)      &kp Q          &kp G          &kp L          &kp H         &kp F         &kp J
             &kp ESC       &u_mt LGUI C  &u_mt LALT A   &u_mt LSHFT E    &u_mt LCTRL I     &kp Y          &kp B          &u_mt LCTRL T  &u_mt LSHFT R  &u_mt LALT N  &u_mt LGUI S  &kp RA(S)
             &none         &kp Z         &kp X          &kp COMMA        &kp RA(U)         &kp RA(O)      &kp P          &kp D          &kp W          &kp M         &kp K         &tog QWERTY
-                                                       &kp TAB          &lt 2 SPACE       &lm 3 LGUI     &kp BACKSPACE  &lt 1 RETURN
+                                                       &kp TAB          &lt 2 SPACE       &lm 3          &kp BACKSPACE  &lt 1 RETURN
             >;
         };
         symbol_layer {
@@ -95,7 +95,7 @@
             label = "WM";
             bindings = <
 			&trans &trans &kp F1 &kp F2 &kp F3 &kp F10       &trans &trans &trans &trans &trans &trans 
-            &trans &trans &kp F4 &kp F5 &kp F6 &kp F11       &trans &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans
+            &trans &trans &kp F4 &kp F5 &kp F6 &kp F11       &trans &kp LG(LEFT) &kp LG(DOWN) &kp LG(UP) &kp LG(RIGHT) &trans
 			&trans &trans &kp F7 &kp F8 &kp F9 &kp F12       &trans &trans &trans &trans &trans &trans 
                                &trans  &trans  &trans        &trans &trans
 

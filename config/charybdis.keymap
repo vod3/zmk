@@ -94,9 +94,9 @@
         wm_layer {
             label = "WM";
             bindings = <
-			&bt BT_SEL 0 &trans &trans &trans &trans &trans       &trans &trans    &trans    &trans  &trans    &k_vol_up 
-            &bt BT_SEL 1 &trans &trans &trans &trans &trans       &trans &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT &k_vol_dn
-		    &bt BT_SEL 2 &trans &trans &trans &trans &trans       &trans &trans    &trans    &trans  &trans    &k_pp
+			&bt BT_SEL 0 &trans &trans &trans &trans &trans       &trans &trans    &trans    &trans  &trans    &kp k_vol_up 
+            &bt BT_SEL 1 &trans &trans &trans &trans &trans       &trans &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT &kp k_vol_dn
+		    &bt BT_SEL 2 &trans &trans &trans &trans &trans       &trans &trans    &trans    &trans  &trans    &kp k_pp
 k
                                        &trans &trans &none        &trans &trans
 
@@ -106,7 +106,7 @@ k
 		qwerty_layer {
 			label = "QWERTY";
 			bindings = <
-            &none   &none     &kp Q    &kp W    &kp E      &kp R       &kp T         &none     &none     &none   &none      &none
+            &kp TAB   &none     &kp Q    &kp W    &kp E      &kp R       &kp T         &none     &none     &none   &none      &none
             &kp ESC &kp LSHFT &kp A    &kp S    &kp D      &kp F       &kp G         &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &none
             &none   &kp LCTRL &kp Z    &kp X    &kp C      &kp V       &kp B         &none     &none     &none   &none      &trans
                                        &kp TAB  &kp SPACE  &none       &trans        &trans

@@ -97,7 +97,6 @@
 			&bt BT_SEL 0 &trans &trans &trans &trans &trans       &trans &trans    &trans    &trans  &trans    &kp K_VOL_UP 
             &bt BT_SEL 1 &trans &trans &trans &trans &trans       &trans &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT &kp K_VOL_DN
 		    &bt BT_SEL 2 &trans &trans &trans &trans &trans       &trans &trans    &trans    &trans  &trans    &kp K_PP
-k
                                        &trans &trans &none        &trans &trans
 
             >;
